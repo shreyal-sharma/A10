@@ -1,65 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cookie Example</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    #cookieDisplay {
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="cookieDisplay">Cookie Value: <span id="cookieValue"></span></div>
+<div id="cookieConsent" class="cookie-consent">
+    <p>This website uses cookies to ensure you get the best experience on our website.</p>
+    <button onclick="acceptCookies()">Accept Cookies</button>
+</div>
 
-<script>
-    // Function to set a cookie
-    function setCookie(cookieName, cookieValue, expirationDays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
-    }
-
-    // Function to get a cookie
-    function getCookie(cookieName) {
-        var name = cookieName + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var cookieArray = decodedCookie.split(';');
-        for (var i = 0; i < cookieArray.length; i++) {
-            var cookie = cookieArray[i];
-            while (cookie.charAt(0) == ' ') {
-                cookie = cookie.substring(1);
-            }
-            if (cookie.indexOf(name) == 0) {
-                return cookie.substring(name.length, cookie.length);
-            }
-        }
-        return "";
-    }
-
-    // Function to display the cookie value
-    function displayCookie() {
-        var cookieValue = getCookie("exampleCookie");
-        document.getElementById("cookieValue").innerText = cookieValue;
-    }
-
-    // Set the cookie and display it
-    setCookie("exampleCookie", "Hello, Cookie!", 1); // Expires in 1 day
-    displayCookie();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
