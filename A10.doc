@@ -1,0 +1,14 @@
+a.	In a word document write a short Narrative (one or two paragraphs) on how cookies can be used to record information about you as you use a web site.
+Websites send Cookies to your browser when you visit them. They help the website remember stuff about your visit, like how your brain remembers things. Cookies are essential because they shape your online experience by customizing content to fit your interests. 
+b.	Discuss the positive and negative aspects of this.
+Cookies were invented to solve the problem of "how to remember information about the user." When a browser requests a web page from a server, cookies belonging to the page are added to the request. This way the server gets the necessary data to "remember" information about users.
+Pros: 
+•	Cookies allow websites to deliver personalized content 
+•	They store information like login credentials and session information allowing faster and seamless access between pages 
+	Cons: 
+•	Cookies raise significant privacy concerns as they track users’ online activities
+•	Cookies are susceptible to security vulnerabilities and identity theft
+c.	You must answer the question: Is the use of cookies ethical?
+The ethical use of cookies depends on whether users have meaningful options to give or withhold consent. By offering users clear and transparent choices regarding cookie tracking, website operators empower individuals to make informed decisions about their online privacy and data preferences. It is ethical if there is an option to deny cookie acceptance. 
+
+https://www.w3schools.com/js/js_cookies.asp 
